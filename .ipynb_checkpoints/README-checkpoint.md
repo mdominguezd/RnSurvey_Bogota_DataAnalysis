@@ -8,6 +8,6 @@ This Jupyter notebook reads the RAW data and create graphs for easier visualizat
 
 ## Multivariate analysis code (Multivariate analysis.ipynb)
 
-This Jupyter notebbok uses the information of the RAW RC data (Dependent variable) and the independent variables to fit two regression models. 
+This Jupyter notebbok uses the information of the RAW RC data (Dependent variable) and the independent variables to fit one log-linear regression model. 
 </br>
-Subsequently, this notebook uses the data of Bogotá's cadastre to apply the two regression models on all the houses with information of he independent variables. These results were mapped later using `ArcGIS`.
+Subsequently, this notebook uses the data of Bogotá's cadastre to apply the regression model on all the houses with information of the independent variables. These results were mapped later using `ArcGIS`.
