@@ -29,13 +29,10 @@ The repository is divided three jupyter notebooks and four data folders.
         
         Jupyter notebook with: 
         
-            - Multivariate analysis of the processed dataset (Processed_DataFrame.csv) [correlation matrix, PCA, etc.] 
-            
-            - Fitting of RC data using predictors.
-            
-            - Perform feature selection
-            
-            - Estimate RC in the Dataset for regression (Cadastre information)
+        - Multivariate analysis of the processed dataset (Processed_DataFrame.csv) [correlation matrix, PCA, etc.] 
+        - Fitting of RC data using predictors.
+        - Perform feature selection
+        - Estimate RC in the Dataset for regression (Cadastre information)
         
     - Dashboard_App.ipynb
         
@@ -70,8 +67,9 @@ The outputs of this model are:
 
 This Jupyter notebook creates an interactive app for residential RC modeling:
 <center>
-    <img src='MarkDown_Assets/RC_modeling_app' width = '400'>
+    <img src='MarkDown_Assets/RC_modeling_app.jpg' width = '400'>
 </center>
+
 
 ### "Under the hood" data input
 The app uses the files in `Dataset for fitting` and `Dataset for regression` folders. These files can be changed for different study areas to perform the same analysis in different study areas or with different RC measurements.
