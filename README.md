@@ -115,5 +115,9 @@ If some advanced modelling settings need to be changed, this can be done in the 
 - Coordinate reference systerm (`crs`)
 
 #### Reset modeling environment
-For optimizing the app performance the p
+For optimizing the app performance the estimated values of RC are saved in the `Regression results` folder.
+
+
+# Important notes
+To run all of the codes and deploy the dashboard app all libaries used need to be installed in your modelling envionment. For some Geospatial analysis the `GDAL` library is used. Follow the instructions in [here](https://opensourceoptions.com/blog/how-to-install-gdal-for-python-with-pip-on-windows/)
 
