@@ -65,3 +65,28 @@ The outputs of this model are:
 - Files (To Regression results):
     - RC estimated for each house in cadaster information `LinReg_model_results.csv`.
     - Raster with RC regression results (`Log_Linear_estimations.tif`)
+    
+## Dashboard app (Dashboard_App.ipynb)
+
+This Jupyter notebook creates an interactive app for residential RC modeling:
+<center>
+    <img src='MarkDown_Assets/RC_modeling_app' width = 400>
+</center>
+
+### "Under the hood" data
+The app uses the files in `Dataset for fitting` and `Dataset for regression` folders. These files can be changed for different study areas to perform the same analysis in different study areas or with different RC measurements.
+
+### User inputs
+While using the app, the user is able to decide:
+- The reference level to compare its dataset
+    - World Health Organization (WHO)
+    - US Environmental Protection Agency (EPA)
+- The type of visualization to help him decide which features will be selected for the regression
+    - Correlation matrix (Low correlation values with RC and highly correlated independent variables are not suggested)
+    - Variance inflation factor (VIFs above 4 are not suggested)
+- The type of regression model to be used for fitting and estimating RC
+    - Log-linear regression
+    - Random Forest regression
+- Features to be used in the fitting and estimation of RC
+    - The variables here are the same ones in `Processed_DataFrame.csv`
+
