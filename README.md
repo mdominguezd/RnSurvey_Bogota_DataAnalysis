@@ -103,7 +103,7 @@ Two windows display information for the analysis of the data. The first one show
 ### Modeling results
 When models are run with the app. They are displayed in the map and the tables on the left.
 <center>
-    <img src='MarkDown_assets/RC_modeling_results.jpg' width = '800'>
+    <img src='MarkDown_Assets/RC_modeling_results.jpg' width = '800'>
     
     Regression results presented in Dashboard.
 </center>
