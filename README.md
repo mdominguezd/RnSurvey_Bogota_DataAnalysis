@@ -66,25 +66,54 @@ The outputs of this model are:
 ## Dashboard app (Dashboard_App.ipynb)
 
 This Jupyter notebook creates an interactive app for residential RC modeling:
+
 <center>
     <img src='MarkDown_Assets/RC_modeling_app.jpg' width = '800'>
+    
+    Initial display of Dashboard app.
 </center>
-
 
 ### "Under the hood" data input
 The app uses the files in `Dataset for fitting` and `Dataset for regression` folders. These files can be changed for different study areas to perform the same analysis in different study areas or with different RC measurements.
 
 ### User inputs
 While using the app, the user is able to decide:
+
+<center>
+    <img src='MarkDown_Assets/RC_modeling_inputs.jpg' width = '500'>
+    
+    User inputs in Dashboard app.
+</center>
+
 - The reference level to compare its dataset
     - World Health Organization (WHO)
     - US Environmental Protection Agency (EPA)
 - The type of visualization to help him decide which features will be selected for the regression
-    - Correlation matrix (Low correlation values with RC and highly correlated independent variables are not suggested)
+    - Correlation matrix (Low correlation values with RC and highly correlated pairs of independent variables are not suggested)
     - Variance inflation factor (VIFs above 4 are not suggested)
 - The type of regression model to be used for fitting and estimating RC
     - Log-linear regression
     - Random Forest regression
 - Features to be used in the fitting and estimation of RC
-    - The variables here are the same ones in `Processed_DataFrame.csv`
+    - The variables here are the same ones in `Processed_DataFrame.csv`.
+    
+### Data analysis
+Two windows display information for the analysis of the data. The first one shows a histogram and a pie plot of the RC measured (`Processed_DataFrame.csv`). The second one shows 
+
+### Modeling results
+When models are run with the app. They are displayed in the map and the tables on the left.
+<center>
+    <img src='MarkDown_assets/RC_modeling_results.jpg' width = '800'>
+    
+    Regression results presented in Dashboard.
+</center>
+
+#### Advanced modeling settings
+If some advanced modelling settings need to be changed, this can be done in the `EstimatingValues` and `rasterize` functions that are defined. Here the user can change:
+- Number of cells for cadaster aggregation in the horizontal component (`width_of_cells_for_aggregation`)
+- Resolution of cells of raster created (`res`)
+- Coordinate reference systerm (`crs`)
+
+#### Reset modeling environment
+For optimizing the app performance the p
 
