@@ -70,7 +70,7 @@ The outputs of this model are:
 
 This Jupyter notebook creates an interactive app for residential RC modeling:
 <center>
-    <img src='MarkDown_Assets/RC_modeling_app' width = 400>
+    <img src='MarkDown_Assets/RC_modeling_app' width = '400'>
 </center>
 
 ### "Under the hood" data
