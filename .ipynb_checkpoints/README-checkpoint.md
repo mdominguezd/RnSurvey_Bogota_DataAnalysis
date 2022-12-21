@@ -73,7 +73,7 @@ This Jupyter notebook creates an interactive app for residential RC modeling:
     <img src='MarkDown_Assets/RC_modeling_app' width = '400'>
 </center>
 
-### "Under the hood" data
+### "Under the hood" data input
 The app uses the files in `Dataset for fitting` and `Dataset for regression` folders. These files can be changed for different study areas to perform the same analysis in different study areas or with different RC measurements.
 
 ### User inputs
