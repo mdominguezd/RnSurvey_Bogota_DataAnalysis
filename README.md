@@ -1,6 +1,6 @@
 # Rn Data analysis and interactive visualization
 
-In this repository you can find the RAW Rn data and the codes, written in `Python` pogramming language (.ipynb), that where used to analyse the RC data retrieved in the context of the publication *Indoor $^{222}$Rn  concentrations and estimated distribution in Bogotá, Colombia: Reproducible results of an exploratory study*. Additionally, a dashboard was created to make the interaction with the data more user friendly and to facilitate the replicability of this type of studies in other study areas.
+In this repository you can find the RAW Rn data and the codes, written in `Python` pogramming language (.ipynb), that where used to analyse the RC data retrieved in the context of the publication *Indoor 222-Rn  concentrations and estimated distribution in Bogotá, Colombia: Reproducible results of an exploratory study*. Additionally, a dashboard was created to make the interaction with the data more user friendly and to facilitate the replicability of this type of studies in other study areas.
 <br><br>
 The repository is divided three jupyter notebooks and four data folders.
 - Folders:
@@ -40,7 +40,7 @@ The repository is divided three jupyter notebooks and four data folders.
     
 
 ## Publication abstract
-Radon ($^{222}$Rn) is a naturally occurring gas that represents a health threat due to its causal relationship with lung cancer. Despite its potential health impacts, this is the first study conducted to determine residential radon concentrations (RC) in the Bogotá region, and only the third in Colombia. This study aims to contribute to the bridging of the baseline information gap present in Colombia and similar countries where RC measurements and research are scarce, by using simple inferential statistics methods to estimate RC spatial distribution. The RC were measured during 35 days in 30 houses using Alpha-track detectors (LR-115). Samples were processed by the FINUAS laboratory at UPTC university. RC presented a geometric mean of 91 $\pm\text{ }14\%$ Bq/m$^3$ and a maximum concentration of 407 Bq/m$^3$. RC found in this study are the highest reported in the country and exceed the mean values of 58.33\% of similar studies in Latin America. In 56.66\% of the residences RC exceeded the WHO's recommendation of 100 Bq/m$^3$. Using a log-linear regression model, the age of the house presented a marginally significant positive association with RC. According to the model, RC measured in houses built before 1980 could increase by 77.28\% compared to those built after 1980 $(\textit{p-value} = 0.056)$. This regression model was used to create a prediction map, that showed higher RC in the oldest areas of Bogotá. This was explained by an increase of cracks that could enhance gas migration in older houses. Despite the analytical limitations, this exploratory study highlights the importance of expanding $^{222}$Rn studies in Colombia.
+Radon $(^{222}Rn)$ is a naturally occurring gas that represents a health threat due to its causal relationship with lung cancer. Despite its potential health impacts, this is the first study conducted to determine residential radon concentrations (RC) in the Bogotá region, and only the third in Colombia. This study aims to contribute to the bridging of the baseline information gap present in Colombia and similar countries where RC measurements and research are scarce, by using simple inferential statistics methods to estimate RC spatial distribution. The RC were measured during 35 days in 30 houses using Alpha-track detectors (LR-115). Samples were processed by the FINUAS laboratory at UPTC university. RC presented a geometric mean of 91 $\pm\text{ }14\%$ $Bq/m^3$ and a maximum concentration of 407 $Bq/m^3$. RC found in this study are the highest reported in the country and exceed the mean values of 58.33\% of similar studies in Latin America. In 56.66\% of the residences RC exceeded the WHO's recommendation of 100 $Bq/m^3$. Using a log-linear regression model, the age of the house presented a marginally significant positive association with RC. According to the model, RC measured in houses built before 1980 could increase by 77.28\% compared to those built after 1980 $(\textit{p-value} = 0.056)$. This regression model was used to create a prediction map, that showed higher RC in the oldest areas of Bogotá. This was explained by an increase of cracks that could enhance gas migration in older houses. Despite the analytical limitations, this exploratory study highlights the importance of expanding 222-Rn studies in Colombia.
 
 ## Data distrbution code (Data distribution.ipynb)
 
@@ -96,6 +96,9 @@ While using the app, the user is able to decide:
     - Random Forest regression
 - Features to be used in the fitting and estimation of RC
     - The variables here are the same ones in `Processed_DataFrame.csv`.
+- Option to perform a high quallity model
+    - High quality resolution = 100m ($\approx$ 30 minutes computation time)
+    - Low quality ressolution = 300m ($\approx$ 5 minutes computation time)
     
 ### Data analysis
 Two windows display information for the analysis of the data. The first one shows a histogram and a pie plot of the RC measured (`Processed_DataFrame.csv`). The second one shows 
