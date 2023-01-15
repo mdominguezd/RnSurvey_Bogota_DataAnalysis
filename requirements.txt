@@ -1,0 +1,16 @@
+dash==2.7.0
+dash_bootstrap_components==1.2.1
+dash_bootstrap_templates==1.0.7
+dash_daq==0.5.0
+dash_iconify==0.1.2
+dash_mantine_components==0.10.2
+geopandas==0.12.1
+matplotlib==3.5.1
+numpy==1.21.5
+pandas==1.4.2
+plotly==5.6.0
+scikit_learn==1.2.0
+Shapely==1.8.0
+statsmodels==0.13.2
+gunicorn
+dash-tools
