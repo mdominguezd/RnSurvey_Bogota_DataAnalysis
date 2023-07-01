@@ -69,13 +69,15 @@ The outputs of this model are:
 
 Refer to the github repository [here](https://github.com/mdominguezd/IRC_modeling_dashboard) to see the source code and the online running version of the dashboard [here](http://ircmodelingdashboard.eu.pythonanywhere.com/) to make use of it.
 
-<!-- This Jupyter notebook creates an interactive app for residential RC modeling:
-
 <center>
-    <img src='MarkDown_Assets/RC_modeling_app.jpg' width = '800'>
+    <img src='MarkDown_Assets/Dashboard_layout.jpg' width = '800'>
     
     Initial display of Dashboard app.
 </center>
+
+<!-- This Jupyter notebook creates an interactive app for residential RC modeling:
+
+
 
 ### "Under the hood" data input
 The app uses the files in `Dataset for fitting` and `Dataset for regression` folders. These files can be changed for different study areas to perform the same analysis in different study areas or with different RC measurements.
