@@ -1,6 +1,6 @@
 # Rn Data analysis and interactive visualization
 
-In this repository you can find the RAW Rn data and the codes, written in `Python` pogramming language (.ipynb), that where used to analyse the RC data retrieved in the context of the publication *Indoor 222-Rn  concentrations and estimated distribution in Bogotá, Colombia: Reproducible results of an exploratory study*. Additionally, a dashboard was created to make the interaction with the data more user friendly and to facilitate the replicability of this type of studies in other study areas.
+In this repository you can find the RAW Rn data collected in Bogotá, Colombia and the codes, written in `Python` pogramming language (.ipynb), that were used to analyse the RC data retrieved in the context of the publication *Indoor 222Rn Modeling in Data-Scarce Regions: An Interactive Dashboard Approach for Bogotá, Colombia*. Additionally, a dashboard was created to make the interaction with the data more user friendly and to facilitate the replicability of this type of studies in other study areas. Further information about the dashboard source code and functionality can be found [here](https://github.com/mdominguezd/IRC_modeling_dashboard).
 <br><br>
 The repository is divided three jupyter notebooks and four data folders.
 - Folders:
@@ -18,7 +18,7 @@ The repository is divided three jupyter notebooks and four data folders.
         
     - Regression results
         
-        This folder contains the results of regressions created in the Multivariate analysis notebook or created while using the dashboard app. The regression results created while using the dashboard app can be deleted by `reseting the model environment`.
+        This folder contains the results of regressions created in the Multivariate analysis notebook.
         
 - Notebooks
     - Data distribution.ipynb
@@ -34,13 +34,15 @@ The repository is divided three jupyter notebooks and four data folders.
         - Perform feature selection
         - Estimate RC in the Dataset for regression (Cadastre information)
         
-    - Dashboard_App.ipynb
+    - Dashboard App
         
-        Jupyter notebook that creates a dashboard that can be used to create an interactive app for Residential RC modeling. This app will take the datasets found in **Dataset for fitting** (`Processed_DataFrame.csv`) and **Dataset for regression** (`Houses_for_Rn_estimation_Cataster.txt`). When used for a different study area, this files should be updated with the corresponding data.
+        <!-- Jupyter notebook that creates a dashboard that can be used to create an interactive app for Residential RC modeling. This app will take the datasets found in **Dataset for fitting** (`Processed_DataFrame.csv`) and **Dataset for regression** (`Houses_for_Rn_estimation_Cataster.txt`). When used for a different study area, this files should be updated with the corresponding data. -->
+
+      An **improved and updated version** of this **dashboard** can be accessed online [**here**](http://ircmodelingdashboard.eu.pythonanywhere.com/). Nevertheless, the datasets presented in this repository can be used as an example in the dashboard.
     
 
 ## Publication abstract
-Radon $(^{222}Rn)$ is a naturally occurring gas that represents a health threat due to its causal relationship with lung cancer. Despite its potential health impacts, this is the first study conducted to determine residential radon concentrations (RC) in the Bogotá region, and only the third in Colombia. This study aims to contribute to the bridging of the baseline information gap present in Colombia and similar countries where RC measurements and research are scarce, by using simple inferential statistics methods to estimate RC spatial distribution. The RC were measured during 35 days in 30 houses using Alpha-track detectors (LR-115). Samples were processed by the FINUAS laboratory at UPTC university. RC presented a geometric mean of 91 $\pm\text{ }14\%$ $Bq/m^3$ and a maximum concentration of 407 $Bq/m^3$. RC found in this study are the highest reported in the country and exceed the mean values of 58.33\% of similar studies in Latin America. In 56.66\% of the residences RC exceeded the WHO's recommendation of 100 $Bq/m^3$. Using a log-linear regression model, the age of the house presented a marginally significant positive association with RC. According to the model, RC measured in houses built before 1980 could increase by 77.28\% compared to those built after 1980 $(\textit{p-value} = 0.056)$. This regression model was used to create a prediction map, that showed higher RC in the oldest areas of Bogotá. This was explained by an increase of cracks that could enhance gas migration in older houses. Despite the analytical limitations, this exploratory study highlights the importance of expanding 222-Rn studies in Colombia.
+Radon ($^{222}$Rn) is a naturally occurring gas that represents a health threat due to its causal relationship with lung cancer. Despite its potential health impacts, several regions have not conducted studies, mainly due to data scarcity and/or economic constraints. This study aims to bridge the baseline information gap by building an interactive [dashboard](http://ircmodelingdashboard.eu.pythonanywhere.com/) that uses inferential statistical methods to estimate indoor radon concentration’s (IRC) spatial distribution for a target area. We demonstrate the functionality of the dashboard by modeling IRC in the city of Bogotá, Colombia, using 30 in situ measurements. The IRC were measured for 35 days using Alpha-track detectors (LR-115). IRC measured were the highest reported in the country, with a geometric mean of 91 ±14 Bq/m$^3$ and a maximum concentration of 407 Bq/m$^3$. In 56.66\% of the residences RC exceeded the WHO's recommendation of 100 Bq/m$^3$.  A prediction map for houses registered in Bogotá’s cadaster was built in the dashboard by using a log-linear regression model fitted with the in situ measurements, together with meteorological, geologic and building specific variables. After feature selection, the log-linear model showed a cross-validation Root Mean Squared Error (RMSE) of 56.5 $\frac{Bq}{m^3}$. Furthermore, the model showed that the age of the house presented a statistically significant positive association with RC. According to the model, IRC measured in houses built before 1980 present a statistically significant increase of 71.60\% compared to those built after 1980 (p-value = 0.045). The prediction map showed higher IRC in older buildings most likely related to cracks in the structure that could enhance gas migration in older houses. This study highlights the importance of expanding $^{222}$Rn studies in countries with a lack of baseline values and provides a cost-effective alternative that could help deal with the scarcity of IRC data and get a better understanding of place-specific IRC spatial distribution.
 
 ## Data distrbution code (Data distribution.ipynb)
 
@@ -63,9 +65,11 @@ The outputs of this model are:
     - RC estimated for each house in cadaster information `LinReg_model_results.csv`.
     - Raster with RC regression results (`Log_Linear_estimations.tif`)
     
-## Dashboard app (Dashboard_App.ipynb)
+## Dashboard app 
 
-This Jupyter notebook creates an interactive app for residential RC modeling:
+Refer to the github repository [here](https://github.com/mdominguezd/IRC_modeling_dashboard) to see the source code and the online running version of the dashboard [here](http://ircmodelingdashboard.eu.pythonanywhere.com/) to make use of it.
+
+<!-- This Jupyter notebook creates an interactive app for residential RC modeling:
 
 <center>
     <img src='MarkDown_Assets/RC_modeling_app.jpg' width = '800'>
@@ -122,5 +126,5 @@ For optimizing the app performance the estimated values of RC are saved in the `
 
 
 # Important notes
-To run all of the codes and deploy the dashboard app all libaries used need to be installed in your modelling envionment. For some Geospatial analysis the `GDAL` library is used. Follow the instructions in [here](https://opensourceoptions.com/blog/how-to-install-gdal-for-python-with-pip-on-windows/)
+To run all of the codes and deploy the dashboard app all libaries used need to be installed in your modelling envionment. For some Geospatial analysis the `GDAL` library is used. Follow the instructions in [here](https://opensourceoptions.com/blog/how-to-install-gdal-for-python-with-pip-on-windows/) -->
 
