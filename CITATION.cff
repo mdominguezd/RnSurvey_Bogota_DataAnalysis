@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Martín
+  given-names: Domínguez-Durán
+orcid: https://orcid.org/0009-0007-0134-9588
+title: "Modeling of indoor 222Rn in data-scarce regions. Dataset and Code."
+version: v.0.1
+date-released: 2024-04-22
